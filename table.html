@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th[scope="col"]{
+            background-color: aqua;
+        }
+        th[scope="row"]{
+            background-color: brown;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <main>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Name</th>
+                    <th rowspan="2" scope="col">ID</th>
+                    <th colspan="2" scope="col">Membership</th>
+                    <th rowspan="2" scope="col">Balance</th>
+                </tr>
+                <tr>
+                    <th scope="col">Joined</th>
+                    <th scope="col">Canceled</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Dara</th>
+                    <td>001</td>
+                    <td>2021</td>
+                    <td>2022</td>
+                    <td>1000$</td>
+                </tr>
+                <tr>
+                    <th scope="row">Da</th>
+                    <td>002</td>
+                    <td>2021</td>
+                    <td>2022</td>
+                    <td>1000$</td>
+                </tr>
+                <tr>
+                    <th scope="row">Daravuth</th>
+                    <td>003</td>
+                    <td>2021</td>
+                    <td>2022</td>
+                    <td>1000$</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th  colspan="4">Total Balance</th>
+                    <td>3000$</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

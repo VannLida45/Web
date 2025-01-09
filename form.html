@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="#">
+            <fieldset>
+                <legend>User information</legend>
+                <!-- username -->
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your name" required>
+            </div>
+            <!-- email -->
+            <div>
+                <label for="Email">Email</label>
+                <input type="Email" id="Email" placeholder="Enter email" maxlength="8" required>
+            </div>
+            <!-- password -->
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+            <div>
+                <label for="major">choose ur major</label>
+                <br>
+                <label for="it">IT</label>
+                <input type="radio" id="it" name="major" value="IT">
+                <br>
+                <label for="Em">Engineer</label>
+                <input type="radio" id="Em" name="major" value="Engineer">
+                <br>
+                <label for="hi">Design</label>
+                <input type="radio" id="hi" name="major" value="Design">
+            </div>
+            <!-- check box -->
+             <div>
+                <p>Select ur hobby</p>
+                <label for="read">Read</label>
+                <input type="checkbox" id="read" name="hobby">
+                <label for="eat">Eat</label>
+                <input type="checkbox" id="eat">
+
+             </div>
+             <!-- select option -->
+            <div>
+                <label for="pob">Place of birth</label>
+                
+                <select name="pob" id="pob">
+            
+                    <option value="">pp</option>
+                    <option value="">kpc</option>
+                    <option value="">kps</option>
+                    <option value="">bbt</option>
+                </select>
+
+            </div>
+            <!-- textarea -->
+             <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" cols="30"></textarea>
+             </div>
+             <!-- file upload -->
+              <div>
+                <label for="photo">
+                    upload ur pic
+                </label>
+                <input type="file" id="photo" name="profile" multiple required/>
+              </div>
+              
+            <!-- button -->
+            <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
